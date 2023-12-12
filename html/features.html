@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <link rel="stylesheet" href="/css/index.css" />
     <title>Features</title>
   </head>
   <body>
@@ -54,16 +55,16 @@
       </header>
     </div>
     <div class="container-fluid slider mt-5">
-      <div id="carouselExample" class="carousel slide">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/images/paypal fea.jpeg"
-              class="d-block w-100"
-              alt="..."
-            />
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="/images/paypal fea.jpeg" class="d-block" alt="..." />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <img
               src="/images/paypal fea2.png"
               class="d-block w-100"
@@ -79,9 +80,9 @@
           </div>
         </div>
         <button
-          class="carousel-control-prev btn"
+          class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -90,7 +91,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleInterval"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -100,11 +101,15 @@
     </div>
 
     <div class="container">
-      <div class="card w-50 mx-auto">
-        <img src="/images/paypal logo.webp" class="card-img-top" alt="..." />
+      <div class="card w-75 mx-auto">
+        <img
+          src="/images/paypal logo.webp"
+          class="card-img-top w-25 mx-auto"
+          alt="..."
+        />
         <div class="card-body">
-          <h5 class="card-title fs-2">PayPal Features</h5>
-          <p class="card-text fs-3" style="min-width: 350px">
+          <h5 class="card-title fs-4">PayPal Features</h5>
+          <p class="card-text fs-5" style="min-width: 350px">
             PayPal features a user-friendly interface for secure online
             transactions, offering services such as quick fund transfers, buyer
             and seller protection, and a convenient digital wallet. Its
@@ -116,7 +121,7 @@
       </div>
     </div>
 
-    <div class="container footer fs-3">
+    <div class="container footer fs-5">
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
